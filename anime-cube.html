@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anime.js Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      // Get the box element
+      const box = document.querySelector('.box');
+
+      // Animate the box
+      anime({
+        targets: box,
+        translateX: '200px',
+        rotate: '1turn',
+        backgroundColor: '#00ff00',
+        duration: 2000,
+        loop: true,
+        easing: 'easeInOutQuad',
+      });
+    </script>
+  </body>
+</html>
